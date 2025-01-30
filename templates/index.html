@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF to Word Converter</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .container { border: 2px dashed #ccc; padding: 30px; text-align: center; }
+        input[type="file"] { margin: 20px 0; }
+        button { background: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PDF'yi Word'e Dönüştür</h1>
+        <form action="/convert" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".pdf" required>
+            <br>
+            <button type="submit">Dönüştür</button>
+        </form>
+    </div>
+</body>
+</html>
